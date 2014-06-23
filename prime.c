@@ -54,6 +54,8 @@ main()
     return 0;
   }
 
+  Result = InputNumber;
+
   /* Preform Check: If 0 1 2 3 as they are special cases.*/
   switch (InputNumber)
   {
@@ -78,7 +80,6 @@ main()
       break;
     }
   }
-  Result = InputNumber;
 
   while(!IsPrime)			// Master While loop to test the next number if it's prime
   {
