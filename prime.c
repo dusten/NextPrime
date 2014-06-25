@@ -54,8 +54,6 @@ main()
     return 0;
   }
 
-  Result = InputNumber;
-
   /* Preform Check: If 0 1 2 3 as they are special cases.*/
   switch (InputNumber)
   {
@@ -78,6 +76,10 @@ main()
     {
       Result = 5; 
       break;
+    }
+    default:
+    {
+      Result = InputNumber;
     }
   }
 
