@@ -80,17 +80,16 @@ main()
     default:
     {
       Result = InputNumber;
-    }
-  }
+      while(!IsPrime)                   // Master While loop to test the next number if it's prime
+      {
+        Result++;                               // Add 1 to the input number and keep adding 1 until you find a prime number
 
-  while(!IsPrime)			// Master While loop to test the next number if it's prime
-  {
-    Result++;				// Add 1 to the input number and keep adding 1 until you find a prime number
-
-    if(isEven(Result))			// We don't need the even numbers so skip them
-      continue;
+        if(isEven(Result))                      // We don't need the even numbers so skip them
+          continue;
     
-    IsPrime = isPrime(Result);		// Test to see if the number is prime.
+        IsPrime = isPrime(Result);              // Test to see if the number is prime.
+      }
+    }
   }
 
   printf("\n\n Next Prime Number is:%d\n\n",Result);
